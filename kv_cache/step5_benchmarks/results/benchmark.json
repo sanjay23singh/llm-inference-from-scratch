@@ -1,0 +1,118 @@
+{
+  "throughput": [
+    {
+      "tokens": 16,
+      "naive_tps": 30.740948137220705,
+      "cached_tps": 52.19400344057713
+    },
+    {
+      "tokens": 32,
+      "naive_tps": 29.22485644953358,
+      "cached_tps": 54.9131031051672
+    },
+    {
+      "tokens": 64,
+      "naive_tps": 25.02980957047669,
+      "cached_tps": 48.76300404230642
+    },
+    {
+      "tokens": 128,
+      "naive_tps": 19.373043216043257,
+      "cached_tps": 50.86958832020562
+    },
+    {
+      "tokens": 256,
+      "naive_tps": 13.454444756394022,
+      "cached_tps": 51.842496084674494
+    },
+    {
+      "tokens": 512,
+      "naive_tps": 7.95405229088442,
+      "cached_tps": 48.22421438718869
+    }
+  ],
+  "prefill_decode": [
+    {
+      "context": 16,
+      "prefill_ms": 38.60750049352646,
+      "prefill_tok_s": 414.4272432938986,
+      "prefill_gflops": 102.39007896050734,
+      "decode_ms": 21.036664955317974,
+      "decode_gflops": 11.744450202765782,
+      "decode_gb_s": 23.580023594690662,
+      "kv_mb": 1.916928
+    },
+    {
+      "context": 64,
+      "prefill_ms": 53.57562564313412,
+      "prefill_tok_s": 1194.573077434548,
+      "prefill_gflops": 295.1360792559661,
+      "decode_ms": 21.059313789010048,
+      "decode_gflops": 11.731819302152767,
+      "decode_gb_s": 23.722710293661677,
+      "kv_mb": 5.455872
+    },
+    {
+      "context": 128,
+      "prefill_ms": 74.31691698729992,
+      "prefill_tok_s": 1722.353471981003,
+      "prefill_gflops": 425.5316484321367,
+      "decode_ms": 19.385749474167824,
+      "decode_gflops": 12.744622761643615,
+      "decode_gb_s": 26.01408796043715,
+      "kv_mb": 10.174464
+    },
+    {
+      "context": 256,
+      "prefill_ms": 116.96145869791508,
+      "prefill_tok_s": 2188.755192094431,
+      "prefill_gflops": 540.7627528599509,
+      "decode_ms": 21.052436903119087,
+      "decode_gflops": 11.73565156076518,
+      "decode_gb_s": 24.402865015778072,
+      "kv_mb": 19.611648
+    },
+    {
+      "context": 512,
+      "prefill_ms": 222.47366607189178,
+      "prefill_tok_s": 2301.3959766121197,
+      "prefill_gflops": 568.5922428550393,
+      "decode_ms": 24.13224894553423,
+      "decode_gflops": 10.23792123799221,
+      "decode_gb_s": 22.070638555158883,
+      "kv_mb": 38.486016
+    },
+    {
+      "context": 1000,
+      "prefill_ms": 531.5737072378397,
+      "prefill_tok_s": 1881.2066631289842,
+      "prefill_gflops": 464.7785634165258,
+      "decode_ms": 25.68077016621828,
+      "decode_gflops": 9.620586236350494,
+      "decode_gb_s": 22.14082382731477,
+      "kv_mb": 74.46528
+    }
+  ],
+  "kv_reference": [
+    {
+      "config": "GPT-2 small, fp32 (this repo)",
+      "kb_per_token": 72.0,
+      "gb_4k_one_seq": 0.301989888
+    },
+    {
+      "config": "GPT-2 small, fp16",
+      "kb_per_token": 36.0,
+      "gb_4k_one_seq": 0.150994944
+    },
+    {
+      "config": "Llama-2-7B-like, fp16, MHA",
+      "kb_per_token": 512.0,
+      "gb_4k_one_seq": 2.147483648
+    },
+    {
+      "config": "Llama-2-70B-like, fp16, GQA (8 KV heads)",
+      "kb_per_token": 320.0,
+      "gb_4k_one_seq": 1.34217728
+    }
+  ]
+}
