@@ -1,0 +1,27 @@
+{
+  "chip": "Apple M1",
+  "torch": "2.14.1",
+  "ceilings": [
+    {
+      "device": "cpu",
+      "dtype": "float32",
+      "gflops": 906.6153155145452,
+      "gbs": 45.75718673310207,
+      "ridge_flop_per_byte": 19.813615745276437
+    },
+    {
+      "device": "mps",
+      "dtype": "float32",
+      "gflops": 1710.5806634621435,
+      "gbs": 58.93271187582901,
+      "ridge_flop_per_byte": 29.025996072713067
+    },
+    {
+      "device": "mps",
+      "dtype": "float16",
+      "gflops": 2309.914594610851,
+      "gbs": 62.35343536233474,
+      "ridge_flop_per_byte": 37.04550649355528
+    }
+  ]
+}
