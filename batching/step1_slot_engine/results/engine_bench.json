@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "device": "cpu",
+    "weights": "gpt2-pretrained",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "cpu": "arm",
+    "cpu_count": 8,
+    "torch": "2.14.1",
+    "torch_threads": 4,
+    "date": "2026-10-19 17:15"
+  },
+  "rows": [
+    {
+      "ctx": 32,
+      "batch": 16,
+      "cat_ms": 26.50737576186657,
+      "inplace_ms": 0.3922935575246811,
+      "cat_copied_mb": 38.928384,
+      "step3_step_ms": 291.105167940259,
+      "slot_step_ms": 362.83699981868267
+    },
+    {
+      "ctx": 64,
+      "batch": 16,
+      "cat_ms": 8.60283337533474,
+      "inplace_ms": 0.27562491595745087,
+      "cat_copied_mb": 76.67712,
+      "step3_step_ms": 62.26024962961674,
+      "slot_step_ms": 56.497206911444664
+    },
+    {
+      "ctx": 128,
+      "batch": 16,
+      "cat_ms": 7.96295702457428,
+      "inplace_ms": 0.11216849088668823,
+      "cat_copied_mb": 152.174592,
+      "step3_step_ms": 52.238043397665024,
+      "slot_step_ms": 54.45241741836071
+    },
+    {
+      "ctx": 192,
+      "batch": 16,
+      "cat_ms": 14.459582045674324,
+      "inplace_ms": 0.38562342524528503,
+      "cat_copied_mb": 227.672064,
+      "step3_step_ms": 58.105457574129105,
+      "slot_step_ms": 53.779542446136475
+    },
+    {
+      "ctx": 248,
+      "batch": 16,
+      "cat_ms": 11.671040207147598,
+      "inplace_ms": 0.11087581515312195,
+      "cat_copied_mb": 293.732352,
+      "step3_step_ms": 63.382625579833984,
+      "slot_step_ms": 54.5217078179121
+    }
+  ],
+  "weights_mb": 497.759232,
+  "reserved_mb": 301.989888
+}
